@@ -7,7 +7,7 @@ if [[ $(id -u) != 0 ]] ; then
 fi
 
 apt update
-apt upgrade
+apt-get -y upgrade
 pip3 install -r requirements.txt
 chmod +x scanner.py
 
